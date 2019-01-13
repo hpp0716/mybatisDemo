@@ -88,7 +88,7 @@
       <resources>
 
           <resource><!--此处的设置是打包的时候排除不相关的目录-->
-              <directory>src/main/resources/conf/${env}</directory><!--此处设置为上面在resource目录下创建的文件夹-->
+              <directory>src/main/java/conf/${env}</directory><!--此处设置为上面在resource目录下创建的文件夹-->
               <includes>
                   <include>**/*</include>
               </includes>
@@ -102,7 +102,7 @@
                   <include>**/*.xml</include>
                   <include>mapper/*.xml</include>
               </includes>
-              <filtering>false</filtering><!--此处不需要过滤器过滤-->
+              <filtering>true</filtering><!--此处不需要过滤器过滤-->
           </resource>
 
           <resource>
